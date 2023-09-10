@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>POST - Create Booking</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0e874a1-1ac4-49f1-b500-62fdf35ff1e7</testCaseGuid>
+</TestCaseEntity>
