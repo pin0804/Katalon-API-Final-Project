@@ -35,18 +35,18 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>Cookie</name>
-      <type>Main</type>
-      <value>token=25291d63cbfb69c</value>
-      <webElementGuid>fd12f70a-9a1f-48c1-a4ea-cd4f9fb901e6</webElementGuid>
-   </httpHeaderProperties>
-   <httpHeaderProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
       <value>Basic YWRtaW46cGFzc3dvcmQxMjM=</value>
       <webElementGuid>26c07cd5-f3fb-4801-8f03-6751073bbeb2</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Cookie</name>
+      <type>Main</type>
+      <value>token=$(token)</value>
+      <webElementGuid>b88a1bf7-28e5-4ec2-8292-a11848e7013b</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
@@ -61,15 +61,6 @@
    <soapServiceFunction></soapServiceFunction>
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
-   <validationSteps>
-      <id>d9eb03d5-5d54-45f8-8987-6d82c196f8cb</id>
-      <name></name>
-      <type>AUTO_DETECT</type>
-      <dataType>AUTO</dataType>
-      <target>RESPONSE</target>
-      <data></data>
-      <activate>true</activate>
-   </validationSteps>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -82,6 +73,8 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
