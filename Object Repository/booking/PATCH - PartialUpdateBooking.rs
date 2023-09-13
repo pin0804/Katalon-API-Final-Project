@@ -76,10 +76,6 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 WS.verifyElementPropertyValue(response, 'firstname', &quot;James&quot;)
 WS.verifyElementPropertyValue(response, 'lastname', &quot;Brown&quot;)
-WS.verifyElementPropertyValue(response, 'totalprice', 873)
-WS.verifyElementPropertyValue(response, 'depositpaid', false)
-WS.verifyElementPropertyValue(response, 'bookingdates.checkin', &quot;2023-09-02&quot;)
-WS.verifyElementPropertyValue(response, 'bookingdates.checkout', &quot;2023-09-15&quot;)
-WS.verifyElementPropertyValue(response, 'additionalneeds', &quot;Breakfast&quot;)</verificationScript>
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

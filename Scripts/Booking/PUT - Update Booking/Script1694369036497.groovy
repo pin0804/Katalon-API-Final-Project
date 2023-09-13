@@ -18,21 +18,5 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import groovy.json.JsonSlurper as JsonSlurper
 
-
-WebUI.callTestCase(findTestCase('Auth/Create Token'), [:], FailureHandling.STOP_ON_FAILURE)
-
 def response = WS.sendRequestAndVerify(findTestObject('booking/PUT - Update Booking'))
 
-// Memeriksa apakah respons berhasil
-//WS.verifyResponseStatusCode(response, 200)
-
-// Mengurai respons JSON
-//def jsonSlurper = new JsonSlurper()
-
-//def jsonResponse = jsonSlurper.parseText(response.getResponseText())
-
-// Mengambil nilai "token" dari respons JSON
-//def respon = jsonResponse
-
-// Menampilkan token (opsional, hanya untuk verifikasi)
-//println('hasil ' + respon)
