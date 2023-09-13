@@ -52,7 +52,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PATCH</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking/:id</restUrl>
+   <restUrl>https://restful-booker.herokuapp.com/booking/2</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -73,6 +73,13 @@ import internal.GlobalVariable as GlobalVariable
 
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
-ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()</verificationScript>
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+WS.verifyElementPropertyValue(response, 'firstname', &quot;James&quot;)
+WS.verifyElementPropertyValue(response, 'lastname', &quot;Brown&quot;)
+WS.verifyElementPropertyValue(response, 'totalprice', 873)
+WS.verifyElementPropertyValue(response, 'depositpaid', false)
+WS.verifyElementPropertyValue(response, 'bookingdates.checkin', &quot;2023-09-02&quot;)
+WS.verifyElementPropertyValue(response, 'bookingdates.checkout', &quot;2023-09-15&quot;)
+WS.verifyElementPropertyValue(response, 'additionalneeds', &quot;Breakfast&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

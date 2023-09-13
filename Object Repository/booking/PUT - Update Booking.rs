@@ -45,14 +45,14 @@
       <matchCondition>equals</matchCondition>
       <name>Cookie</name>
       <type>Main</type>
-      <value>token=$(token)</value>
+      <value>token=abc123</value>
       <webElementGuid>b88a1bf7-28e5-4ec2-8292-a11848e7013b</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>PUT</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking/:id</restUrl>
+   <restUrl>https://restful-booker.herokuapp.com/booking/1200</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -75,6 +75,16 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-</verificationScript>
+
+WS.verifyElementPropertyValue(response, 'firstname', &quot;James&quot;)
+WS.verifyElementPropertyValue(response, 'lastname', &quot;Brown&quot;)
+WS.verifyElementPropertyValue(response, 'totalprice', 111)
+WS.verifyElementPropertyValue(response, 'depositpaid', true)
+WS.verifyElementPropertyValue(response, 'bookingdates.checkin', &quot;2018-01-01&quot;)
+WS.verifyElementPropertyValue(response, 'bookingdates.checkout', &quot;2019-01-01&quot;)
+WS.verifyElementPropertyValue(response, 'additionalneeds', &quot;Breakfast&quot;)
+
+
+assertThat(response.getStatusCode()).isIn(Arrays.asList(200, 201, 202))</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

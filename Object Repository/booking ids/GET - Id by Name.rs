@@ -15,16 +15,40 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>ca8192c3-12eb-4881-b201-51aefa5e90d3</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Accept</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>ec5fd079-7963-457d-8265-d317d2b138fb</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Cookie</name>
+      <type>Main</type>
+      <value>token=abc123</value>
+      <webElementGuid>ebeb022e-9869-4b3e-a242-c0e3fee56fbf</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer 963f568ba95f7ab</value>
-      <webElementGuid>680e91f5-d44e-470e-8339-5fe0bd03785a</webElementGuid>
+      <value>Basic YWRtaW46cGFzc3dvcmQxMjM=</value>
+      <webElementGuid>e56b7bcb-85cc-48e1-b442-881dfd2f4114</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking?firstname=sally&amp;lastname=brown</restUrl>
+   <restUrl>https://restful-booker.herokuapp.com/booking?firstname=james&amp;lastname=brown</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

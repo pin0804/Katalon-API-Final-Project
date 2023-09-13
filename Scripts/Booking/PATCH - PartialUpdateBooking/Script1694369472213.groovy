@@ -19,5 +19,5 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Auth/Create Token'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequestAndVerify(findTestObject('PING/PING - HealthCheck'))
+WS.sendRequestAndVerify(findTestObject('booking/PATCH - PartialUpdateBooking'))
 

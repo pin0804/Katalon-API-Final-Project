@@ -23,16 +23,32 @@
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>Accept</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>4d2ae371-1cc7-48b4-9f79-a23bc000c2ce</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Cookie</name>
+      <type>Main</type>
+      <value>token=abc123</value>
+      <webElementGuid>d2207ea3-aaa9-4792-ae60-1fae4e3724d0</webElementGuid>
+   </httpHeaderProperties>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Bearer 963f568ba95f7ab</value>
-      <webElementGuid>79d05ebc-6c03-4318-a8e1-4f7e8d2d9884</webElementGuid>
+      <value>Basic YWRtaW46cGFzc3dvcmQxMjM=</value>
+      <webElementGuid>f6bf9ba5-8a95-4641-9752-f756a2d2d262</webElementGuid>
    </httpHeaderProperties>
    <katalonVersion>8.6.5</katalonVersion>
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking?checkin=2014-03-13&amp;checkout=2014-05-21</restUrl>
+   <restUrl>https://restful-booker.herokuapp.com/booking?checkin=2018-01-01&amp;checkout=2019-01-01</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
