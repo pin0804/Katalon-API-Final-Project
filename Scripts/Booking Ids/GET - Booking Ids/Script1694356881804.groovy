@@ -20,6 +20,7 @@ import groovy.json.JsonSlurper as JsonSlurper
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.ObjectRepository as ObjectRepository
 import com.kms.katalon.core.testobject.TestObjectProperty as TestObjectProperty
+import groovy.json.JsonSlurper as JsonSlurper
 
 // Mengirim permintaan ke API dan mendapatkan respons
 def response = WS.sendRequestAndVerify(findTestObject('booking ids/GET - Booking Ids'))

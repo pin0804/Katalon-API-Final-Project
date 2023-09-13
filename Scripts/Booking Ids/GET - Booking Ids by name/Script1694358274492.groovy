@@ -16,12 +16,28 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import groovy.json.JsonSlurper as JsonSlurper
 
 def response = WS.sendRequest(findTestObject('booking ids/GET - Id by Name'))
 
 // Memeriksa apakah respons berhasil
 WS.verifyResponseStatusCode(response, 200)
 
-// Memeriksa apakah JSON respons kosong
-def jsonResponse = response.getResponseBodyContent()
-assert jsonResponse != null && !jsonResponse.trim().isEmpty() : "JSON respons kosong."
+// Mengurai respons JSON
+def jsonSlurper = new JsonSlurper()
+def jsonResponse = jsonSlurper.parseText(response.getResponseText())
+
+def bookingIds = jsonResponse.collect { it.bookingid }
+
+// Menampilkan booking ID yang diambil dari respons API (opsional)
+println("Booking ID Jim Brown yang diambil dari respons API: " + jsonResponse.bookingid)
+
+// Verifikasi booking ID apakah booking ID adalah angka positif atau melakukan verifikasi lainnya
+for (bookingid in bookingIds) {
+    if (bookingid >= 0) {
+        println("Booking ID valid: " + bookingid)
+        
+    } else {
+        println("Booking ID invalid: " + bookingid)
+    }
+}

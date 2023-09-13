@@ -48,7 +48,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking?firstname=james&amp;lastname=brown</restUrl>
+   <restUrl>https://restful-booker.herokuapp.com/booking?firstname=Jim&amp;lastname=Brown</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
