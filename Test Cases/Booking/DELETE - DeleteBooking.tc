@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DELETE - DeleteBooking</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d2606b39-a0d0-4ce6-bc30-012374521950</testCaseGuid>
+</TestCaseEntity>
