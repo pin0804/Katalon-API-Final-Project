@@ -48,7 +48,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://restful-booker.herokuapp.com/booking?checkin=2018-01-01&amp;checkout=2019-01-01</restUrl>
+   <restUrl>https://restful-booker.herokuapp.com/booking?checkin=2020-01-01&amp;checkout=2021-01-01</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

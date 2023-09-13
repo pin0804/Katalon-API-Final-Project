@@ -18,16 +18,35 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import groovy.json.JsonSlurper as JsonSlurper
 
-// Membuat objek permintaan API
-RequestObject request = findTestObject('booking ids/GET - Id by Name')
-
-// Mengirim permintaan API
-def response = WS.sendRequest(request)
+def response = WS.sendRequest(findTestObject('booking ids/GET - Id by date'))
 
 // Memeriksa apakah respons berhasil
 WS.verifyResponseStatusCode(response, 200)
 
+// Mengurai respons JSON
+def jsonSlurper = new JsonSlurper()
+
+def jsonResponse = jsonSlurper.parseText(response.getResponseText())
+
+def bookingIds = jsonResponse.collect({ 
+        it.bookingid
+    })
+
+// Menampilkan booking ID yang diambil dari respons API (opsional)
+println('Booking ID yang diambil dari respons API: ' + jsonResponse.bookingid)
+
+// Verifikasi booking ID apakah booking ID adalah angka positif atau melakukan verifikasi lainnya
+for (def bookingid : bookingIds) {
+    if (bookingid >= 0) {
+        println('Booking ID valid: ' + bookingid)
+    } else {
+        println('Booking ID invalid: ' + bookingid)
+    }
+}
+
+
 // Memeriksa apakah JSON respons kosong
-def jsonResponse = response.getResponseBodyContent()
-assert jsonResponse != null && !jsonResponse.trim().isEmpty() : "JSON respons kosong."
+def jsonResponse2 = response.getResponseBodyContent()
+assert jsonResponse2 != null && !jsonResponse2.trim().isEmpty() : "JSON respons kosong."
