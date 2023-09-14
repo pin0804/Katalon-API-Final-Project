@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Summary: Agfina - Test Case Import Jira - Get Top 10 Booking Ids
+Description: @AuthToken
+
+Feature: Get Top 10 Booking Ids
+
+As a user, I want to get the top 10 booking IDs.
+
+
+
+@Valid
+
+Scenario: Get Top 10 Booking Ids
+
+Given I have a valid authentication token
+
+When I send a GET request to the &quot;/[https://restful-booker.herokuapp.com/booking|https://restful-booker.herokuapp.com/booking]&quot; endpoint
+
+Then the response status code should be 200
+
+And the response body should contain a list of the top 10 booking IDs</description>
+   <name>ABP-2 Agfina - Test Case Import Jira - Get Top 10 Booking Ids</name>
+   <tag>jira-integration</tag>
+   <integratedEntity>
+      <productName>JIRA</productName>
+      <properties>
+         <entry>
+            <key>integratedValue</key>
+            <value>{&quot;jiraIssue&quot;:{&quot;fields&quot;:{&quot;customFields&quot;:{&quot;customfield_10034&quot;:&quot;@AuthToken\n\nFeature: Get Top 10 Booking Ids\n\nAs a user, I want to get the top 10 booking IDs.\n\n\n\n@Valid\n\nScenario: Get Top 10 Booking Ids\n\nGiven I have a valid authentication token\n\nWhen I send a GET request to the \&quot;/https://restful-booker.herokuapp.com/booking\&quot; endpoint\n\nThen the response status code should be 200\n\nAnd the response body should contain a list of the top 10 booking IDs&quot;,&quot;customfield_10018&quot;:{&quot;hasEpicLinkFieldDependency&quot;:false,&quot;showField&quot;:false,&quot;nonEditableReason&quot;:{&quot;reason&quot;:&quot;PLUGIN_LICENSE_ERROR&quot;,&quot;message&quot;:&quot;The Parent Link is only available to Jira Premium users.&quot;}},&quot;customfield_10019&quot;:&quot;0|i0002n:&quot;},&quot;status&quot;:{&quot;id&quot;:10003,&quot;description&quot;:&quot;&quot;,&quot;iconUrl&quot;:&quot;https://ksat08git.atlassian.net/&quot;,&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/status/10003&quot;,&quot;name&quot;:&quot;To Do&quot;},&quot;project&quot;:{&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/project/10002&quot;,&quot;key&quot;:&quot;ABP&quot;,&quot;id&quot;:10002,&quot;name&quot;:&quot;API Based Project&quot;},&quot;components&quot;:[],&quot;summary&quot;:&quot;Agfina - Test Case Import Jira - Get Top 10 Booking Ids&quot;,&quot;description&quot;:&quot;@AuthToken\n\nFeature: Get Top 10 Booking Ids\n\nAs a user, I want to get the top 10 booking IDs.\n\n\n\n@Valid\n\nScenario: Get Top 10 Booking Ids\n\nGiven I have a valid authentication token\n\nWhen I send a GET request to the \&quot;/[https://restful-booker.herokuapp.com/booking|https://restful-booker.herokuapp.com/booking]\&quot; endpoint\n\nThen the response status code should be 200\n\nAnd the response body should contain a list of the top 10 booking IDs&quot;,&quot;reporter&quot;:{&quot;emailAddress&quot;:&quot;finacontech@gmail.com&quot;,&quot;active&quot;:true,&quot;displayName&quot;:&quot;Agfina Aliarahma&quot;,&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/user?accountId\u003d712020%3A162d9d4f-8368-4534-85ae-3e0d263b99ad&quot;},&quot;assignee&quot;:{&quot;emailAddress&quot;:&quot;finacontech@gmail.com&quot;,&quot;active&quot;:true,&quot;displayName&quot;:&quot;Agfina Aliarahma&quot;,&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/user?accountId\u003d712020%3A162d9d4f-8368-4534-85ae-3e0d263b99ad&quot;},&quot;priority&quot;:{&quot;id&quot;:3,&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/priority/3&quot;,&quot;name&quot;:&quot;Medium&quot;},&quot;votes&quot;:{&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/issue/ABP-2/votes&quot;,&quot;votes&quot;:0,&quot;hasVoted&quot;:false},&quot;fixVersions&quot;:[],&quot;subtasks&quot;:[],&quot;labels&quot;:[]},&quot;self&quot;:&quot;https://ksat08git.atlassian.net/rest/api/2/issue/10014&quot;,&quot;key&quot;:&quot;ABP-2&quot;,&quot;id&quot;:10014}}</value>
+         </entry>
+      </properties>
+      <type>TESTCASE</type>
+   </integratedEntity>
+   <comment></comment>
+   <testCaseGuid>2d397685-1c6b-4ee5-954a-902e9cca17b4</testCaseGuid>
+</TestCaseEntity>
