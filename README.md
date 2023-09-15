@@ -4,6 +4,8 @@
 
 This project serves as the final project assignment for our bootcamp, where we will be focusing on automating API testing. We will be testing the API located at the following URL: [https://restful-booker.herokuapp.com/apidoc/index.html](https://restful-booker.herokuapp.com/apidoc/index.html).
 
+Test Plan Docs: [Test Plan](https://docs.google.com/document/d/1OFjQMJU4CN_D4AyzQgsoDtOdH8Jt84yc/edit?usp=sharing&ouid=115576201016350834095&rtpof=true&sd=true)
+
 ## Project Description
 
 The tasks being automated are as follows:
